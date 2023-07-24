@@ -18,6 +18,14 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!--tailwind custom color or something  -->
     <script>
@@ -38,7 +46,74 @@
     </style>
   </head>
   <body class="font-manrope">
-    <header></header>
+    <header class="container mx-auto">
+      <!-- hero section starts  -->
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row">
+          <div>
+            <h1 class="text-7xl font-extrabold">
+              It's good <br />
+              tea time at The <br />
+              Tea House
+            </h1>
+            <p class="py-6">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+          <div>
+            <img src="./images/banner.png" class="max-w-sm" />
+
+            <!-- ratings badge -->
+            <div
+              class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60"
+            >
+              <i class="fa-solid fa-star text-3xl" style="color: #ffc850"></i>
+              <div>
+                <h3 class="text-3xl">5.00</h3>
+                <p>Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- hero section ends  -->
+
+      <!-- featured products starts-->
+      <!-- text section  -->
+      <section class="container mx-auto">
+        <div>
+          <h1 class="text-4xl text-center font-extrabold mt-28">
+            Our Featured Products
+          </h1>
+          <p class="text-base text-center my-5">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, <br />
+            by injected humour, or randomised words which don't look even
+            slightly believable.
+          </p>
+        </div>
+        <!-- cards section  -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <!-- card - 1  -->
+          <div class="card w-96 bg-gray-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/tea-1.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-2xl font-extrabold">Milk Tea</h2>
+              <p class="text-base font-semibold">
+                Creamer could be replaced by fresh milk
+              </p>
+              <div class="card-actions"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- featured products ends-->
+    </header>
     <main></main>
     <footer></footer>
   </body>
